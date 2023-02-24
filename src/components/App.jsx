@@ -1,16 +1,18 @@
+import { Route, Routes, NavLink } from "react-router-dom";
+
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      <nav>
+        <NavLink to={'/'} end>
+              Home
+        </NavLink>
+        <NavLink to={'/'} end>
+              Movie
+        </NavLink>
+        
+      </nav>
     </div>
   );
 };
