@@ -1,0 +1,25 @@
+.header{
+    height: 40px;
+    width: 100%;
+background-color: aqua;
+box-shadow:  0 2px 5px black;
+margin-bottom: 15px;
+align-items: center;
+}
+
+.header__nav{
+    padding: 10px;
+
+   
+}
+
+.header__link{
+    padding-right: 5px;
+    text-decoration: none;
+    color:blueviolet;
+    font-weight: 700;
+
+}
+.header__link:hover{
+    color: blue;
+}

@@ -1,0 +1,7 @@
+.list__link{
+    text-decoration: none;
+    color:chartreuse
+}
+.list__link:hover{
+    color: black;
+}

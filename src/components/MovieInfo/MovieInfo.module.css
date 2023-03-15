@@ -1,0 +1,13 @@
+.movie_Details{
+    display: flex;
+    width: 1500px;
+}
+
+.info{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.info__link{
+    text-decoration: none;
+}

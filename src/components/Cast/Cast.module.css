@@ -1,0 +1,17 @@
+.cast_item{
+list-style: none;
+
+width: 150px;
+}
+
+.cast_list{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    width: 1600px;
+}
+.cast__img{
+    
+    height: 200px;
+
+}
