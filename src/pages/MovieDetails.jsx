@@ -10,6 +10,8 @@ const MovieDetails = () => {
 
   const location = useLocation();
 
+  // console.log(location);
+
   useEffect(() => {
     const getData = async MovieId => {
       const res = await API.getMovieById(MovieId);
@@ -21,13 +23,16 @@ const MovieDetails = () => {
 
   if (!data) return;
 
+  // const backLinkHref = useMemo(() => 
+  //   location.state?.from ?? '/movies', [location.state?.from]);
+
   const backLinkHref = location.state?.from ?? '/movies';
 
   return (
     <main>
       <ButtonBack path={backLinkHref}>Go back</ButtonBack>
-      <MovieInfo data={data} />
-      <Suspense>
+      <MovieInfo data={data} state={{from: location.state?.from}}/>
+      <Suspense fallback={<div>Loading Data...</div>}>
         <Outlet />
       </Suspense>
     </main>

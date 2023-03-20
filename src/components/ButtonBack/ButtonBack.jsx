@@ -17,6 +17,7 @@ const ButtonBack =({path, children}) =>{
 export default ButtonBack;
 
 ButtonBack.propTypes= {
-    path: PropTypes.string,
-    children: PropTypes.array
+    // при різних пасах видає різний проп
+    // path: PropTypes.object || PropTypes.string,
+    children: PropTypes.string ,  
 }

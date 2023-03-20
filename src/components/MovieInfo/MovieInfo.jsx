@@ -1,8 +1,12 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import css from './MovieInfo.module.css';
 
 const MovieInfo = ({ data }) => {
   
+  const location = useLocation();
+
+  console.log(location);
+
   const { 
     title, 
     vote_average, 
@@ -56,10 +60,10 @@ const MovieInfo = ({ data }) => {
         <p>Additional Information</p>
         <ul>
           <li>
-            <Link className={css.info__link} to={'cast'}>Cast</Link>
+            <Link className={css.info__link} state={{from: location.state?.from}} to={'cast'} >Cast</Link>
           </li>
           <li>
-            <Link className={css.info__link} to={'reviews'}>Reviews</Link>
+            <Link className={css.info__link} state={{from: location.state?.from}} to={'reviews'}>Reviews</Link>
           </li>
         </ul>
         <hr />

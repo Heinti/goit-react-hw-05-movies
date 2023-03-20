@@ -13,7 +13,7 @@ const SharedLayout = () => {
           {/* <hr /> */}
         </nav>
       </header>
-      <Suspense>
+      <Suspense fallback={<div>Loading Data...</div>}>
         <Outlet />
       </Suspense>
     </div>
